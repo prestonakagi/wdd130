@@ -1,0 +1,109 @@
+/* Define the CSS variables in the document :root pseudo-class selector 
+using the color scheme you selected and documented in this week's 
+site plan/graphic identity assignment. */
+
+/* declaring global variables --variable-name: value;
+    calling variable use var(variable-name) */
+:root {
+    --primary-color: #89B6A5;
+    --secondary-color: #C1A685;
+    --accent1-color: #F1E8BB;
+    --accent2-color: #84BCDA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1000px;
+}
+
+nav {background-color: var(--primary-color);
+    padding: 10px;
+    width: 1000px;
+    height: 50px;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+
+}
+
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+  }
+
+h2 {
+    padding: 10px;
+}  
+
+p {
+    font-family: "Source Sans 3", serif; /* This font was a custom made font. */
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    color: black;
+    padding: 10px;
+  }
+
+main div .hero {
+    position: relative;
+}
+
+#hero-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* position h1, article absolutely. img in article fleats to right of p. */
+
+main div h1 {
+    background-color: rgba(27, 27, 27, 0.5);
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    bottom: 430px;
+    left: 350px;
+}
+
+main div article {
+    background-color: rgba(241, 232, 187, 0.65);
+    box-sizing: content-box;
+    width: 800px;
+    height: 170px;
+    padding: 10px;
+    position: absolute;
+    text-align: left;
+    /* top: 30px; */
+    bottom: -125px;
+    left: 80px;
+}
+
+main div article img {
+    float: right;
+    width: 29%;
+    height: auto;
+}
+
+footer nav a {
+    text-decoration: none; /* removes default style of underlines under hyperlinks */
+}
+
+footer nav a img {
+    width: 3%;
+    height: auto;
+}
+
+
+/* for the 5 rafting images, if in one horizontal line,
+    try 200px width each. */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitewater Rafting Contact Page</title>
+    <meta name="description" content="Whitewater Rafting Contact page listing ways to contact them.">
+    <meta name="author" content="Preston Akagi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@350&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header> <!--grid container-->
+        <img src="images/wwr-logo.webp" alt="Whitewater Rafting logo">
+        <nav class="upper-nav"> <!--flex container-->
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main id="main-contact">
+        <!--Address, phone number, email, small embedded google map-->
+        <!--Three happy-looking employee profile images with captions of their job titles-->
+        <!--Form to get user's name, email, radio buttons choose options general inquiry or reservation question or 
+            website suggestion, textarea box for their message, check box labeled "Please subscribe me to the monthly newsletter", 
+            submission button labeled and properly styled.-->    
+        <div class="contact">
+            <h1 class="merriweather-regular">Contact Us</h1>
+        </div>
+        <!-- the following div to set main's grid items, h1 and everything else, in lower row -->
+        <div class="contact-mainofpage">
+            <div class="left-column">
+                <section class="contact-images">
+                    <!-- <h2 class="merriweather-regular">Adventure Awaits You!</h2> -->
+                    <!--images by Freepik-->
+                    <figure id="employee1">
+                        <img src="images/employee1.webp" alt="wwrafting employee1">
+                        <figcaption>Joe, Adventure Architect</figcaption>
+                    </figure>
+                    <figure id="employee2">
+                        <img src="images/employee2.webp" alt="wwrafting employee2">
+                        <figcaption>Samatha, Logistics Coordinator</figcaption>
+                    </figure>
+                    <figure id="employee3">
+                        <img src="images/employee3.webp" alt="wwrafting employee3">
+                        <figcaption>Kevin, Adventure Guide</figcaption>
+                    </figure>
+                </section>
+                <section class="co-contacts">
+                    <h2 class="merriweather-regular">We love questions and feedback. We're always happy to help! You can contact us below or by filling out the form to the right.</h2>
+                    <div class="phone">
+                        <h3>Phone:</h3>
+                        <p>801-923-5478</p>
+                    </div>
+                    <div class="email">
+                        <h3>Email:</h3>
+                        <p>801-923-5478</p>
+                    </div>
+                    <div class="address">
+                        <h3>Address:</h3>
+                        <p>700 E 300 S, Salt Lake City, UT 84102</p>
+                    </div>
+                    <!--Small embedded google map-->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1068.42614980608!2d-111.87134193623284!3d40.76278346681212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f56f3bbf0765%3A0xe8b635bbf6e7a53e!2s700%20E%20300%20S%2C%20Salt%20Lake%20City%2C%20UT%2084102!5e0!3m2!1sen!2sus!4v1739049250489!5m2!1sen!2sus" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+            </div>
+            <div class="right-column">
+                <form class="form">
+                    <div class="fullname">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+                    <div class="useremail">
+                        <label for="useremail">Email:</label>
+                        <input type="email" id="useremail" name="useremail">
+                    </div>
+                    <div class="message-purpose">
+                        <label for="general-inquiry">Message purpose:</label><br>
+                        <input type="radio" id="general-inquiry" name="general-inquiry" value="general-inquiry">
+                        <label for="general-inquiry">General Inquiry</label><br>
+                        <!--<br> is a line break, like a line return.-->
+                        <input type="radio" id="reservation-question" name="reservation-question" value="reservation-question">
+                        <label for="general-inquiry">Reservation Question</label><br>
+                        <input type="radio" id="website-suggestion" name="website-suggestion" value="website-suggestion">
+                        <label for="general-inquiry">Website Suggestion</label>
+                    </div>
+                    <div class="feedback">
+                        <label for="feedback">Message:</label><br>
+                        <textarea id="feedback" name="feedback" rows="4" placeholder=""></textarea>
+                    </div>
+                    <div  class="check">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--Wireframe from moqups.com is ONLY FOR MAIN ELEMENT!!-->
+    <footer>
+        <p>©️2025 🛶 Whitewater Rafting 🛶 Preston Akagi</p>
+        <a href="https://app.moqups.com/llOS86lnz9XYhPkTOyyS7uVXIj35nCFP/view/page/a9a5f8d52">Contacts wireframe only for main element</a>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/instagram-icon.svg" alt="Instagram">
+            </a>
+            <a href="https://www.whatsapp.com">
+                <img src="images/whatsapp-icon.svg" alt="WhatsApp">
+            </a>                        
+        </nav>
+    </footer>    
+</body>
+</html>

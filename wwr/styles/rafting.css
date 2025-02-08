@@ -292,7 +292,7 @@ footer p {
 }
 
 .contact-images {
-    grid-template-rows: 1 / 2;
+    grid-row: 1 / 2;
     display: flex;
     justify-content: space-between; /* TODO */
 }

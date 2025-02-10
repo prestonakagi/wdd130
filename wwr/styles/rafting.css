@@ -394,6 +394,7 @@ button {
     width: 230px;
     height: 50px;
     justify-self: left;
+    font-size: 1.2rem;
 }
 
 /* pseudo-class button:hover */

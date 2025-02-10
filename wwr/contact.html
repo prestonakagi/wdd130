@@ -27,9 +27,9 @@
         <!--Form to get user's name, email, radio buttons choose options general inquiry or reservation question or 
             website suggestion, textarea box for their message, check box labeled "Please subscribe me to the monthly newsletter", 
             submission button labeled and properly styled.-->    
-        <div class="contact">
+        <!-- <div class="contact">
             <h1 class="merriweather-regular">Contact Us</h1>
-        </div>
+        </div> -->
         <!-- the following div to set main's grid items, h1 and everything else, in lower row -->
         <div class="contact-mainofpage">
             <div class="left-column">
@@ -42,7 +42,7 @@
                     </figure>
                     <figure id="employee2">
                         <img src="images/employee2.webp" alt="wwrafting employee2">
-                        <figcaption>Samatha, Logistics Coordinator</figcaption>
+                        <figcaption>Kate, Logistics Coordinator</figcaption>
                     </figure>
                     <figure id="employee3">
                         <img src="images/employee3.webp" alt="wwrafting employee3">
@@ -81,13 +81,19 @@
                     </div>
                     <div class="message-purpose">
                         <label for="general-inquiry">Message purpose:</label><br>
-                        <input type="radio" id="general-inquiry" name="general-inquiry" value="general-inquiry">
-                        <label for="general-inquiry">General Inquiry</label><br>
+                        <div class="options-radio">
+                            <input type="radio" id="general-inquiry" name="general-inquiry" value="general-inquiry">
+                            <label for="general-inquiry">General Inquiry</label>
+                        </div><br>
                         <!--<br> is a line break, like a line return.-->
-                        <input type="radio" id="reservation-question" name="reservation-question" value="reservation-question">
-                        <label for="general-inquiry">Reservation Question</label><br>
-                        <input type="radio" id="website-suggestion" name="website-suggestion" value="website-suggestion">
-                        <label for="general-inquiry">Website Suggestion</label>
+                        <div class="options-radio">
+                            <input type="radio" id="reservation-question" name="reservation-question" value="reservation-question">
+                            <label for="general-inquiry">Reservation Question</label>
+                        </div><br>
+                        <div class="options-radio">
+                            <input type="radio" id="website-suggestion" name="website-suggestion" value="website-suggestion">
+                            <label for="general-inquiry">Website Suggestion</label>
+                        </div>
                     </div>
                     <div class="feedback">
                         <label for="feedback">Message:</label><br>

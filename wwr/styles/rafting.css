@@ -27,6 +27,7 @@ header {
     grid-template-columns: 182px 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
+    background-color: var(--secondary-color);
 }
 
 header img {
@@ -44,6 +45,10 @@ header img {
     padding: 10px;
     width: 818px;
     height: 150px;
+}
+
+.upper-nav a {
+    font-size: 2em;
 }
 
 h1 {
@@ -206,9 +211,11 @@ figcaption {
 }
 
 footer {
+    background-color: var(--secondary-color);
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    /* align-items: center; */
     width: 1000px;
 }
 
@@ -218,12 +225,19 @@ footer p {
     grid-column: 1 / 2;
 }
 
-.sociallinks {
+footer a {
     background-color: var(--secondary-color);
-    padding: 10px;
     height: 50px;
     grid-column: 2 / 3;
+    text-align: center;
+}
+
+.sociallinks {
+    background-color: var(--secondary-color);
+    height: 50px;
+    grid-column: 3 / 4;
     display: flex;
+    column-gap: 10px;
     justify-content: end;
 }
 
@@ -243,23 +257,24 @@ footer p {
 /* Contact page */
 #main-contact {
     width: 1000px;
-    height: 1250px;
+    height: 1150px;
     display: grid;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+    row-gap: 20px;
 }
 
-.contact {
+/* .contact {
     grid-row: 1 / 2;
     /* align-self: center; */
-    justify-self: center;
-}
+    /* justify-self: center; */
+/* } */
 
 .contact-mainofpage {
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
     /* grid for its children: 2 sections, 1 form */
     display: grid;
-    grid-template-columns: 1fr 40px 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
@@ -284,47 +299,104 @@ footer p {
 }
 
 .left-column {
+    background-color: var(--primary-color);
+    padding: 10px;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 180px 1fr;
     grid-template-columns: 1fr;
+    row-gap: 50px;
 }
 
 .contact-images {
     grid-row: 1 / 2;
     display: flex;
     justify-content: space-between; /* TODO */
+    column-gap: 10px;
 }
 
 .co-contacts {
     grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
+.phone, .email, .address {
+    font-size: 1.2em;
+}
 
 .right-column {
     grid-row: 1 / 2;
-    grid-column: 3 / 4;
-    /* background-color: rgba(27, 27, 27, 0.5); */
+    grid-column: 2 / 3;
+    background-color: var(--accent1-color);
+    padding-right: 10px;
 }
 
 .form {
+    padding-left: 40px;
+    padding-top: 10px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    /* display: flex;
-    flex-direction: column;
-    align-items: stretch; */
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 0.5fr 1fr;
+    /* paragraph font info */
+    font-family: "Source Sans 3", serif; /* This font was a custom made font. */
+    font-weight: 350;
+    font-style: normal;
+    color: black;
+}
 
+label {
+    font-size: 1.2em;
+}
+
+.fullname, .useremail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.message-purpose {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.options-radio label, .check label {
+    padding-left: 10px;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    /* The above attributes of padding and font-size "critical to provide spacing inside of input elements." */
+    /* paragraph font info. This will be font in textboxes. */
+    font-family: inherit;
+    font-family: "Source Sans 3", serif; /* This font was a custom made font. */
+    font-weight: 350;
+    font-style: normal;
+    color: black;
+}
+
+.feedback textarea{
+    width: 100%;
 }
 
 button {
+    margin: 0;
     background-color: rgb(57, 185, 57);
-    color: white;
-    padding: 0.75rem;
+    /* background-color: var(--accent2-color); */
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0;
+    width: 230px;
+    height: 50px;
+    justify-self: left;
 }
 
 /* pseudo-class button:hover */
 button:hover {
-    background-color: blue;
+    background-color: var(--accent2-color);
 }

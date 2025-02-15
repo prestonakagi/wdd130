@@ -491,3 +491,103 @@ button:hover {
     width: 355px;
     height: auto;
 }
+
+/* Trips Page */
+
+.trips-descriptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: var(--primary-color);
+}
+
+.colorado-img {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.colorado-river {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.salmon-img {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.salmon-river {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.snake-img {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.snake-river {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.trips-descriptions img {
+    width: 300px;
+    height: auto;
+    justify-self: center;
+}
+
+.table-call {
+    display: grid;
+    grid-column: 2fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px 10px; /* tb lr */
+    background-color: var(--secondary-color);
+}
+
+.table-call table, .table-call th, .table-call td {
+    border: 1px solid black;
+}
+
+.table-call table {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    border-collapse: collapse; /* this gets one border instead of borders around th and td boxes. */
+}
+
+thead tr, tbody tr {
+    height: 50px;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+caption {
+    padding-bottom: 10px;
+}
+
+caption, th {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+}
+
+td {
+    font-family: "Source Sans 3", serif; /* This font was a custom made font. */
+    font-weight: 350;
+    font-style: normal;
+    color: black;
+    padding: 10px;
+}
+
+.table-call section {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}

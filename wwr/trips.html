@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whitewater Rafting Contact Page</title>
-    <meta name="description" content="Whitewater Rafting Contact page listing ways to contact them.">
+    <title>Whitewater Rafting Trips Page</title>
+    <meta name="description" content="Whitewater Rafting Trips page listing trip types, table of available trips.">
     <meta name="author" content="Preston Akagi">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,106 +21,93 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-    <main id="main-contact">
-        <!--Address, phone number, email, small embedded google map-->
-        <!--Three happy-looking employee profile images with captions of their job titles-->
-        <!--Form to get user's name, email, radio buttons choose options general inquiry or reservation question or 
-            website suggestion, textarea box for their message, check box labeled "Please subscribe me to the monthly newsletter", 
-            submission button labeled and properly styled.-->    
-        <!-- <div class="contact">
-            <h1 class="merriweather-regular">Contact Us</h1>
-        </div> -->
+    <main id="main-trips">
+        <!--3 detailed trip descriptions with photos-->
+        <!--table outlining all the available trips with relevant information-->
+        <!--Call to action to contact the company. This action opens the Contact Us page on the site-->
         <!-- the following div to set main's grid items, h1 and everything else, in lower row -->
-        <div class="contact-mainofpage">
-            <div class="left-column">
-                <section class="contact-images">
-                    <!-- <h2 class="merriweather-regular">Adventure Awaits You!</h2> -->
-                    <!--images by Freepik-->
-                    <figure id="employee1">
-                        <img src="images/employee1.webp" alt="wwrafting employee1">
-                        <figcaption>Joe, Adventure Architect</figcaption>
-                    </figure>
-                    <figure id="employee2">
-                        <img src="images/employee2.webp" alt="wwrafting employee2">
-                        <figcaption>Kate, Logistics Coordinator</figcaption>
-                    </figure>
-                    <figure id="employee3">
-                        <img src="images/employee3.webp" alt="wwrafting employee3">
-                        <figcaption>Kevin, Adventure Guide</figcaption>
-                    </figure>
-                </section>
-                <section class="co-contacts">
-                    <h2 class="merriweather-regular">We love questions and feedback. We're always happy to help! You can contact us below or by filling out the form to the right.</h2>
-                    <div class="phone">
-                        <h3>Phone:</h3>
-                        <p>801-923-5478</p>
-                    </div>
-                    <div class="email">
-                        <h3>Email:</h3>
-                        <p>801-923-5478</p>
-                    </div>
-                    <div class="address">
-                        <h3>Address:</h3>
-                        <p>700 E 300 S, Salt Lake City, UT 84102</p>
-                    </div>
-                    <!--Small embedded google map-->
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1068.42614980608!2d-111.87134193623284!3d40.76278346681212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f56f3bbf0765%3A0xe8b635bbf6e7a53e!2s700%20E%20300%20S%2C%20Salt%20Lake%20City%2C%20UT%2084102!5e0!3m2!1sen!2sus!4v1739049250489!5m2!1sen!2sus" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </section>
-            </div>
-            <div class="right-column">
-                <form class="form">
-                    <div class="fullname">
-                        <label for="fullname">Full Name:</label>
-                        <input type="text" id="fullname" name="fullname">
-                    </div>
-                    <div class="useremail">
-                        <label for="useremail">Email:</label>
-                        <input type="email" id="useremail" name="useremail">
-                    </div>
-                    <div class="message-purpose">
-                        <label for="general-inquiry">Message purpose:</label><br>
-                        <div class="options-radio">
-                            <input type="radio" id="general-inquiry" name="general-inquiry" value="general-inquiry">
-                            <label for="general-inquiry">General Inquiry</label>
-                        </div><br>
-                        <!--<br> is a line break, like a line return.-->
-                        <div class="options-radio">
-                            <input type="radio" id="reservation-question" name="reservation-question" value="reservation-question">
-                            <label for="general-inquiry">Reservation Question</label>
-                        </div><br>
-                        <div class="options-radio">
-                            <input type="radio" id="website-suggestion" name="website-suggestion" value="website-suggestion">
-                            <label for="general-inquiry">Website Suggestion</label>
-                        </div>
-                    </div>
-                    <div class="feedback">
-                        <label for="feedback">Message:</label><br>
-                        <textarea id="feedback" name="feedback" rows="4" placeholder=""></textarea>
-                    </div>
-                    <div  class="check">
-                        <input type="checkbox" id="subscribe" name="subscribe">
-                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                    </div>
-
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
+        <div class="trips-descriptions"> <!--Grid here-->
+            <img class="colorado-img" src="images/colorado-river.webp" alt="Colorado River">
+            <p class="colorado-river">Colorado River:<br>Rafting down the Colorado River is a beautiful and fun time. Floating through canyons with red stone walls on either side is a majestic and peaceful prelude to bouncing down rapids downriver!</p>
+            <img class="salmon-img" src="images/salmon-river.webp" alt="Salmon River">
+            <p class="salmon-river">Salmon River:<br>On this trip, you have the great opportunity to fish for salmon! Whitewater Rafting provides some fishing rods and equipment, but supplies are limited. If you have it, you are welcome to bring your own fishing rod and equipment. Enjoy rafting and fishing all in one trip!</p>                
+            <img class="snake-img" src="images/snake-river.webp" alt="Snake River">
+            <p class="snake-river">Snake River:<br>What a ride the Snake River is! This twisting, turning river has great rapids and vistas. Sometimes you can see animals peeking out of the forest trees on the bank. Just around the river bend is a new adventure!</p>
+        </div>
+        <div class="table-call">
+            <!-- Table of available trips. Table size including headers: 6r by 5c (2 of 2 rivers, 1 of last river)
+             Headers: Trip (Colorado River, etc), Date, Gathering Address, Available Number of Spots (max 6 per raft), Price per Person -->
+            <table>
+                <caption>Available Trips</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Trip</th>
+                        <th scope="col">Date (mm/dd/yy)</th>
+                        <th scope="col">Gathering Address</th>
+                        <th scope="col">Available Number of Spots<br>(max 6 per raft)</th>
+                        <th scope="col">Price per Person</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Colorado River</th>
+                        <td>06/17/25</td>
+                        <td>182 S Main St, <br>Moab, UT 84532</td> <!--TODO: Fill out all Addresses-->
+                        <td>12</td>
+                        <td>$110</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Colorado River</th>
+                        <td>07/20/25</td>
+                        <td>182 S Main St, <br>Moab, UT 84532</td> <!--TODO: Fill out all Addresses-->
+                        <td>5</td>
+                        <td>$110</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Salmon River</th>
+                        <td>10/05/25</td>
+                        <td>503 Riverfront Dr, Salmon, ID 83467</td> <!--TODO: Fill out all Addresses-->
+                        <td>6</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Salmon River</th>
+                        <td>11/01/25</td>
+                        <td>503 Riverfront Dr, Salmon, ID 83467</td> <!--TODO: Fill out all Addresses-->
+                        <td>10</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Snake River</th>
+                        <td>08/12/25</td>
+                        <td>1910 Fillmore St, Twin Falls, ID 83301</td> <!--TODO: Fill out all Addresses-->
+                        <td>15</td>
+                        <td>$100</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Call to Action to contact page. -->
+            <section class="call-to-action">
+                <h2 class="merriweather-regular">Have questions or feedback?</h2>
+                <!-- <div> -->
+                <p>If you have any questions about an available trip or have feedback after enjoying an adventure, please <a href="https://prestonakagi.github.io/wdd130/wwr/contact.html">let us know!</a></p>
+                <!-- <a href="https://prestonakagi.github.io/wdd130/wwr/contact.html">contacting us now!</a> -->
+                <!-- </div> -->
+            </section>
         </div>
     </main>
-    <!--Wireframe from moqups.com is ONLY FOR MAIN ELEMENT!!-->
+    <!--Wireframe from moqups.com-->
     <footer>
         <p>©️2025 🛶 Whitewater Rafting 🛶 Preston Akagi</p>
         <a href="images/trips-wireframe.webp" target="_blank">Trips wireframe image</a>
         <nav class="sociallinks">
-            <a href="https://www.facebook.com">
+            <a href="https://www.facebook.com" target="_blank">
                 <img src="images/facebook-icon.svg" alt="Facebook">
             </a>
-            <a href="https://www.instagram.com">
+            <a href="https://www.instagram.com" target="_blank">
                 <img src="images/instagram-icon.svg" alt="Instagram">
             </a>
-            <a href="https://www.whatsapp.com">
+            <a href="https://www.whatsapp.com" target="_blank">
                 <img src="images/whatsapp-icon.svg" alt="WhatsApp">
             </a>                        
         </nav>

@@ -108,7 +108,7 @@ h1 {
   }
 
 /* normal paragraph font */
-p {
+p, .paragraph-font {
     font-family: "Source Sans 3", serif; /* This font was a custom made font. */
     font-weight: 350;
     font-style: normal;
@@ -400,4 +400,94 @@ button {
 /* pseudo-class button:hover */
 button:hover {
     background-color: var(--accent2-color);
+}
+
+/* Home Index Page */
+
+.call-form {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.call-to-action {
+    background-color: var(--accent1-color);
+    padding: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+.call-to-action div {
+    justify-content: center;
+}
+
+.call-form form {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 125px 100px 100px 50px;
+}
+
+.call-form form p {
+    grid-column: 1 / 3;
+}
+
+.news-name , .news-email {
+    grid-column: 1 / 2;
+}
+
+#newsletter {
+    width: 100px;
+    height: 40px;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    background-color: rgb(57, 185, 57);
+}
+
+#newsletter:hover {
+    background-color: var(--accent2-color)
+}
+
+.offering-figs {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px 1fr;
+    justify-items: center;
+    gap: 10px;
+}
+
+.offering1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.offering2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.family-fig {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    width: 300px;
+    height: auto;
+}
+
+.family-fig img, .corp-fig img {
+    width: 300px;
+    height: auto;
+}
+
+.corp-fig img {
+    width: 355px;
+    height: auto;
+}
+
+.corp-fig {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    width: 355px;
+    height: auto;
 }

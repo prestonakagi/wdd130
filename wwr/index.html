@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitewater Rafting Home Page</title>
+    <meta name="description" content="Whitewater Rafting Home Index page to welcome user, subscribe to newsletter, link to trips page, purpose and offerings.">
+    <meta name="author" content="Preston Akagi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@350&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header> <!--grid container-->
+        <img src="images/wwr-logo.webp" alt="Whitewater Rafting logo">
+        <nav class="upper-nav"> <!--flex container-->
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <!-- 1 large full-width 'hero' image and has a heading message, which positioned absolute.
+         Newsletter sign up form that requests at least name and email.
+         Call to action with link to trips page that 'compels visitors visit page.'
+         Grid layout with at least 2 additional images and content about wwr site purpose and offerings. -->
+
+         <!-- keep same html for hero 'heading.' Keep similar CSS. -->
+        <div class="hero">
+            <img id="hero-img" src="images/home-hero.webp" alt="hero paddles up" width="1000">
+            <h1>PADDLES UP FUN!</h1>
+        </div>
+        <div class="call-form">
+            <section class="call-to-action">
+                <h2 class="merriweather-regular">Wanting to take a trip?</h2>
+                <div>
+                    <p>Scratch that itch for fun by checking out our exciting trips!</p>
+                    <a href="https://prestonakagi.github.io/wdd130/wwr/trips.html">Book a trip now!</a>
+                </div>
+            </section>
+            <form>
+                <p>Keep in the loop about all our future trips! Feedback from our guides and wonderful rafters is noted and included in our newsletter. Sign up to receive our newsletter and recieve monthly updates about Whitewater Rafting.</p>
+                <div class="news-name paragraph-font">
+                    <label for="fullname">Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="news-email paragraph-font">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+                <button id="newsletter" type="submit">Sign Up</button>
+            </form>
+        </div>
+        <section class="offering-figs">
+            <h2 class="merriweather-regular offering1">Family Fun</h2>
+            <figure class="family-fig">
+                <img src="images/family-rapids.webp" alt="family rapids">
+                <figcaption>With safe and energetic guides, you and your family can enjoy riding the rapids and making great memories!</figcaption>
+            </figure>
+            <h2 class="merriweather-regular offering2">Corporate Trips</h2>
+            <figure class="corp-fig">
+                <img src="images/floating-corp.webp" alt="floating corporate trip">
+                <figcaption>Build communication, trust, and have fun with those you work with! Corporate trips on the river can be more enjoyable than working in the office!</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>©️2025 🛶 Whitewater Rafting 🛶 Preston Akagi</p>
+        <a href="https://app.moqups.com/unsaved/c27a1337/edit/page/ad64222d5">home wireframe</a>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/instagram-icon.svg" alt="Instagram">
+            </a>
+            <a href="https://www.whatsapp.com">
+                <img src="images/whatsapp-icon.svg" alt="WhatsApp">
+            </a>                        
+        </nav>
+    </footer>    
+</body>
+</html>
